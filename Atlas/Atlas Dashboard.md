@@ -16,7 +16,7 @@ aliases:
 ## 📚 All Atlas Notes
 
 ```dataview
-TABLE file.cday AS "Created", file.mday AS "Modified"
+TABLE WITHOUT ID dateformat(file.cday, "MM/dd/yyyy") AS "Created", dateformat(file.mday, "MM/dd/yyyy") AS "Modified", file.link AS "Note"
 FROM "Atlas"
 WHERE file.name != "Atlas Dashboard"
 SORT file.mday DESC

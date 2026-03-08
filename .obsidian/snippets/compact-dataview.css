@@ -1,0 +1,16 @@
+/* Compact Dataview table rows — reduces vertical padding for denser display */
+.dataview.table-view-table td,
+.dataview.table-view-table th {
+    padding: 3px 8px !important;
+    line-height: 1.4 !important;
+}
+
+/* Constrain the last column (file name) so other columns remain visible */
+.dataview.table-view-table td:last-child,
+.dataview.table-view-table th:last-child {
+    max-width: 220px !important;
+    width: 220px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}

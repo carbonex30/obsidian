@@ -1,0 +1,98 @@
+{
+  "main": {
+    "id": "5af328305d2e91c4",
+    "type": "split",
+    "children": [
+      {
+        "id": "577f2051463c7050",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "templates.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "949ce8fa9d4c4fbd",
+    "type": "split",
+    "children": [
+      {
+        "id": "7d3503f87f084b41",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fd5aaff8fee8709d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "742c01163b68ba78",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "865e06197910aa95",
+    "type": "split",
+    "children": [
+      {
+        "id": "9fd2c2fe027df280",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4038b1f774900465",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "templates.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "577f2051463c7050",
+  "lastOpenFiles": [
+    "templates.md",
+    "permanent notes.md",
+    "Inventory.md",
+    "filling problems.md",
+    "pharmacy problems.md"
+  ]
+}

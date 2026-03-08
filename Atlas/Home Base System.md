@@ -36,6 +36,18 @@ Home Base is a single note that serves as your **command center** for navigating
 - Link to dashboards, not individual notes (dashboards handle the details)
 - Review and adjust weekly
 
+## Vault Configuration
+
+Key settings in `.obsidian/app.json` that support this system:
+
+| Setting | Value | Effect |
+|---|---|---|
+| `newFileLocation` | `folder` | New notes go to a fixed folder instead of the current one |
+| `newFileFolderPath` | `Plus` | `Ctrl+N` / `Cmd+N` always creates notes in `Plus/` (the inbox) |
+| `attachmentFolderPath` | `Extras` | Pasted images and files go to `Extras/` |
+
+> [!note] QuickAdd commands (New Project, New Daily Note, etc.) have their own destination folders set independently and are unaffected by `newFileFolderPath`.
+
 ## Source
 
 From Nick Milo's Linking Your Thinking / Ideaverse system.

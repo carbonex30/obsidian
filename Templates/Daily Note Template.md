@@ -1,11 +1,17 @@
+<%*
+const noteDate = moment(tp.file.title, "YYYY-MM-DD");
+const prevDay  = noteDate.clone().subtract(1, "days").format("YYYY-MM-DD");
+const nextDay  = noteDate.clone().add(1, "days").format("YYYY-MM-DD");
+const dayName  = noteDate.format("dddd");
+_%>
 ---
 tags:
   - daily-note
 ---
 
-# {{date:YYYY-MM-DD}} — {{date:dddd}}
+# <% tp.file.title %> — <% dayName %>
 
-[[Home Base]] ← Home | [[Calendar Dashboard]] ← Calendar
+**← [[<% prevDay %>]]** | [[Home Base]] ← Home | [[Calendar Dashboard]] ← Calendar | **[[<% nextDay %>]] →**
 
 ---
 
@@ -54,4 +60,4 @@ SORT file.cday ASC
 
 ---
 
-**← [[{{date:YYYY-MM-DD|-1}}]]** | **[[{{date:YYYY-MM-DD|+1}}]] →**
+**← [[<% prevDay %>]]** | **[[<% nextDay %>]] →**

@@ -1,0 +1,42 @@
+/* Limit Dataview table column widths for better readability */
+
+/* Force all dataview table cells to have max width */
+.dataview.table-view-table td {
+    max-width: 400px !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+}
+
+/* First column (file/title) - narrower */
+.dataview.table-view-table td:first-child {
+    max-width: 300px !important;
+}
+
+/* Hover to see full content */
+.dataview.table-view-table td:hover {
+    overflow: visible !important;
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    z-index: 1000;
+    position: relative;
+    background-color: var(--background-primary);
+}
+
+/* Alternative: Target all table cells in markdown preview */
+.markdown-preview-view .dataview table td {
+    max-width: 400px !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+}
+
+.markdown-preview-view .dataview table td:first-child {
+    max-width: 300px !important;
+}
+
+.markdown-preview-view .dataview table td:hover {
+    overflow: visible !important;
+    white-space: normal !important;
+    word-wrap: break-word !important;
+}

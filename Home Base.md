@@ -11,11 +11,35 @@ aliases:
 
 ---
 
+## 🕐 Recently Modified
+
+> Pick up exactly where you left off — vault-wide activity stream, always current.
+> → [[Recents]] for full view by area
+
+```dataview
+TABLE WITHOUT ID dateformat(file.mtime, "MM/dd/yy HH:mm") AS "Modified", file.folder AS "Area", file.link AS "File"
+FROM ""
+WHERE !contains(file.folder, "Templates")
+  AND file.name != "Home Base"
+  AND file.name != "Recents"
+SORT file.mtime DESC
+LIMIT 10
+```
+
+---
+
 ## 🗺️ Atlas — Things to Know
 
 > Your knowledge base — reference materials, concepts, and evergreen notes.
 
 - [[Atlas Dashboard]]
+
+```button
+name 📝 New Atlas Note
+type command
+action QuickAdd: New Atlas Note
+color blue
+```
 
 ---
 
@@ -25,6 +49,19 @@ aliases:
 
 - [[Projects Dashboard]]
 - [[Areas of Effort]]
+
+```button
+name 🚀 New Project
+type command
+action QuickAdd: New Project
+color purple
+```
+```button
+name 🎯 New Area of Effort
+type command
+action QuickAdd: New Area of Effort
+color purple
+```
 
 **🔥 Active Projects**
 
@@ -42,6 +79,14 @@ FROM "Efforts/Projects/Simmering"
 SORT rank DESC
 ```
 
+**📋 Outstanding Project Next Actions**
+
+```dataview
+TASK
+FROM "Efforts/Projects"
+WHERE !completed
+```
+
 ---
 
 ## 📅 Calendar — Make It Whole
@@ -50,6 +95,19 @@ SORT rank DESC
 
 - [[Calendar Dashboard]]
 - **Today's Note:** Use `Cmd+D` / `Ctrl+D` to open today's daily note
+
+```button
+name 📅 New Daily Note
+type command
+action QuickAdd: New Daily Note
+color green
+```
+```button
+name 🤝 New Meeting Note
+type command
+action QuickAdd: New Meeting Note
+color green
+```
 
 **Recent Daily Notes**
 
@@ -60,6 +118,15 @@ SORT file.cday DESC
 LIMIT 7
 ```
 
+**☑️ Outstanding Daily Tasks**
+
+```dataview
+TASK
+FROM "Calendar/Daily Notes"
+WHERE !completed
+SORT file.name DESC
+```
+
 ---
 
 ## ➕ Plus — Capture What's New
@@ -67,6 +134,13 @@ LIMIT 7
 > Your inbox — fresh ideas, quick captures, and unprocessed notes.
 
 - [[Plus Inbox]]
+
+```button
+name ⚡ Quick Capture
+type command
+action QuickAdd: New Capture
+color yellow
+```
 
 **Recently Added Notes**
 
@@ -91,6 +165,7 @@ LIMIT 10
 
 | Section | Purpose | Go To |
 |---------|---------|-------|
+| 🕐 Recents | Activity Stream | [[Recents]] |
 | 🗺️ Atlas | Things to Know | [[Atlas Dashboard]] |
 | ⚡ Efforts | Things to Do | [[Projects Dashboard]] |
 | 📅 Calendar | Make It Whole | [[Calendar Dashboard]] |
