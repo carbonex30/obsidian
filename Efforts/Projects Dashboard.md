@@ -13,6 +13,41 @@ aliases:
 
 ---
 
+```button
+name 🚀 New Project
+type command
+action QuickAdd: New Project
+color purple
+```
+```button
+name 🎯 New Area of Effort
+type command
+action QuickAdd: New Area of Effort
+color purple
+```
+
+---
+
+## 🎯 Areas of Effort
+
+> High-level categories that group your projects. Click any area to explore it in depth.
+
+```dataviewjs
+const areas = dv.pages('"Efforts/Areas"')
+  .sort(a => a.rank ?? -9999, 'desc');
+
+const rows = areas.map(a => {
+  const count = dv.pages('"Efforts/Projects"')
+    .where(p => p.area && p.area.path === a.file.link.path)
+    .length;
+  return [a.file.link, a.rank ?? "", count];
+});
+
+dv.table(["Area", "Rank", "Projects"], rows);
+```
+
+---
+
 ## 🔥 Active Projects
 
 > Currently receiving focused attention and resources.

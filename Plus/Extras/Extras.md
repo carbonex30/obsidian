@@ -16,7 +16,7 @@ aliases:
 
 ```dataview
 TABLE file.cday AS "Created"
-FROM "Extras"
+FROM "Plus/Extras"
 WHERE file.name != "Extras"
 SORT file.cday DESC
 ```

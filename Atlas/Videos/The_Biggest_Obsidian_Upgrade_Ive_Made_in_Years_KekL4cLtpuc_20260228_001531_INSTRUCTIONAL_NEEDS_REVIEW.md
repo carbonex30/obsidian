@@ -1,13 +1,16 @@
 ---
-title: "The Biggest Obsidian Upgrade I’ve Made in Years…"
-channel: "Linking_Your_Thinking_with_Nick_Milo"
-video_url: "https://youtube.com/watch?v=KekL4cLtpuc"
-summary_generated_on: "2026-02-28 00:15:31"
-video_type: "instructional"
-detection_reason: "score=+6 | transcript+8(let me show you,click on) | transcript-2(i think)"
-published: "2025-11-28"
+title: The Biggest Obsidian Upgrade I’ve Made in Years…
+channel: Linking_Your_Thinking_with_Nick_Milo
+video_url: https://youtube.com/watch?v=KekL4cLtpuc
+summary_generated_on: 2026-02-28 00:15:31
+video_type: instructional
+detection_reason: score=+6 | transcript+8(let me show you,click on) | transcript-2(i think)
+published: 2025-11-28
+status: watched
+rating:
 tags:
   - autosummarizer
+  - video
 ---
 
 # The Biggest Obsidian Upgrade I’ve Made in Years…
@@ -514,3 +517,21 @@ The complete implementation of this system is available through Nick Milo's Idea
 - Create advanced queries and views for sophisticated information retrieval
 
 The system represents a comprehensive approach to knowledge management that grows with the user's needs while maintaining simplicity and accessibility at its core. The Home Base note serves as both the entry point for beginners and the command center for advanced users, ensuring that the system remains valuable regardless of complexity level or usage patterns.
+
+---
+
+## My Reflections
+
+*Your own thoughts, reactions, and how this connects to what you already know.*
+
+
+
+## Connections
+
+> Links to other notes, concepts, or projects in your vault.
+
+- 
+
+---
+
+[[Video Dashboard]] ← Back to Videos | [[Atlas Dashboard]] ← Back to Atlas | [[Home Base]] ← Back to Home

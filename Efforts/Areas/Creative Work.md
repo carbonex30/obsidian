@@ -1,6 +1,7 @@
 ---
 tags:
   - area
+rank: 6
 ---
 
 # 🎯 Creative Work
@@ -14,7 +15,7 @@ TABLE
   rank AS "Rank",
   file.folder AS "Status"
 FROM "Efforts/Projects"
-WHERE area = [[Creative Work]]
+WHERE area = this.file.link
 SORT rank DESC
 ```
 

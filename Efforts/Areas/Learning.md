@@ -1,6 +1,7 @@
 ---
 tags:
   - area
+rank:
 ---
 
 # 🎯 Learning
@@ -14,7 +15,7 @@ TABLE
   rank AS "Rank",
   file.folder AS "Status"
 FROM "Efforts/Projects"
-WHERE area = [[Learning]]
+WHERE area = this.file.link
 SORT rank DESC
 ```
 

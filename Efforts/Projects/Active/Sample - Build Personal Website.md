@@ -1,5 +1,5 @@
 ---
-rank: 8.5
+rank: 1
 area: "[[Career Development]]"
 status: active
 tags:

@@ -15,24 +15,18 @@ aliases:
 
 ## All Areas
 
-```dataview
-LIST
-FROM "Efforts/Areas"
-SORT file.name ASC
-```
+```dataviewjs
+const areas = dv.pages('"Efforts/Areas"')
+  .sort(a => a.rank ?? -9999, 'desc');
 
----
+const rows = areas.map(a => {
+  const count = dv.pages('"Efforts/Projects"')
+    .where(p => p.area && p.area.path === a.file.link.path)
+    .length;
+  return [a.file.link, a.rank ?? "", count];
+});
 
-## Projects by Area
-
-```dataview
-TABLE
-  rank AS "Rank",
-  file.folder AS "Status"
-FROM "Efforts/Projects"
-WHERE area != null
-GROUP BY area
-SORT area ASC
+dv.table(["File", "Rank", "Projects"], rows);
 ```
 
 ---

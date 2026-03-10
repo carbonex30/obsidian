@@ -4,9 +4,9 @@ tags:
 rank:
 ---
 
-# 🎯 {{title}}
+# 🎯 Obsidian Vault Improvement
 
-> *Describe the purpose and scope of this area of effort.*
+> Making the ultimate obsidian vault, based upon [[The_Biggest_Obsidian_Upgrade_Ive_Made_in_Years_KekL4cLtpuc_20260228_001531_INSTRUCTIONAL_NEEDS_REVIEW]]
 
 ## Related Projects
 

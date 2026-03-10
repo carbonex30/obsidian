@@ -44,7 +44,7 @@ Key settings in `.obsidian/app.json` that support this system:
 |---|---|---|
 | `newFileLocation` | `folder` | New notes go to a fixed folder instead of the current one |
 | `newFileFolderPath` | `Plus` | `Ctrl+N` / `Cmd+N` always creates notes in `Plus/` (the inbox) |
-| `attachmentFolderPath` | `Extras` | Pasted images and files go to `Extras/` |
+| `attachmentFolderPath` | `Plus/Extras` | Pasted images and files go to `Plus/Extras/` |
 
 > [!note] QuickAdd commands (New Project, New Daily Note, etc.) have their own destination folders set independently and are unaffected by `newFileFolderPath`.
 

@@ -11,6 +11,22 @@ aliases:
 
 ---
 
+## 🧭 Quick Navigation
+
+> [!nav-plus] ➕ + | [[Recents\|RECENTS]] | [[Plus Inbox\|PLUS INBOX]] | [[Extras\|x]]
+
+> [!nav-atlas] 🗺️ ATLAS » NOTES » [[Atlas Dashboard\|ATLAS DASHBOARD]]
+
+> [!nav-atlas] 🗺️ ATLAS » SOURCES » [[Reading Dashboard\|BOOKS & ARTICLES]] | [[Video Dashboard\|VIDEOS]]
+
+> [!nav-calendar] 📅 CALENDAR » RECORDS » [[Calendar Dashboard\|CALENDAR DASHBOARD]]
+
+> [!nav-efforts] ⚡ EFFORTS » AREAS » [[Areas of Effort\|AREAS OF EFFORT]]
+
+> [!nav-efforts] ⚡ EFFORTS » PROJECTS » [[Projects Dashboard\|PROJECTS DASHBOARD]]
+
+---
+
 ## 🕐 Recently Modified
 
 > Pick up exactly where you left off — vault-wide activity stream, always current.
@@ -33,12 +49,51 @@ LIMIT 10
 > Your knowledge base — reference materials, concepts, and evergreen notes.
 
 - [[Atlas Dashboard]]
+- [[Reading Dashboard]]
+- [[Video Dashboard]]
 
 ```button
 name 📝 New Atlas Note
 type command
 action QuickAdd: New Atlas Note
 color blue
+```
+```button
+name 📖 New Reading Note
+type command
+action QuickAdd: New Reading Note
+color blue
+```
+```button
+name 🎬 New Video Note
+type command
+action QuickAdd: New Video Note
+color blue
+```
+
+**📖 Currently Reading**
+
+```dataview
+TABLE WITHOUT ID
+  file.link AS "Title",
+  author AS "Author",
+  current-page + " / " + total-pages AS "Progress"
+FROM "Atlas/Reading"
+WHERE status = "reading"
+SORT start-date DESC
+LIMIT 5
+```
+
+**🎬 Recent Videos**
+
+```dataview
+TABLE WITHOUT ID
+  file.link AS "Title",
+  channel AS "Channel",
+  video_type AS "Type"
+FROM "Atlas/Videos"
+SORT file.cday DESC
+LIMIT 5
 ```
 
 ---
@@ -134,6 +189,7 @@ SORT file.name DESC
 > Your inbox — fresh ideas, quick captures, and unprocessed notes.
 
 - [[Plus Inbox]]
+- [[Extras]] *(overflow & attachments)*
 
 ```button
 name ⚡ Quick Capture
@@ -147,30 +203,11 @@ color yellow
 ```dataview
 TABLE file.cday AS "Captured"
 FROM "Plus"
+WHERE file.name != "Extras"
+  AND !contains(file.folder, "Plus/Extras")
 SORT file.cday DESC
 LIMIT 10
 ```
-
----
-
-## 📦 Extras — The Overflow
-
-> Miscellaneous items, attachments, and things that don't fit elsewhere.
-
-- [[Extras]]
-
----
-
-## 🧭 Quick Navigation
-
-| Section | Purpose | Go To |
-|---------|---------|-------|
-| 🕐 Recents | Activity Stream | [[Recents]] |
-| 🗺️ Atlas | Things to Know | [[Atlas Dashboard]] |
-| ⚡ Efforts | Things to Do | [[Projects Dashboard]] |
-| 📅 Calendar | Make It Whole | [[Calendar Dashboard]] |
-| ➕ Plus | Capture What's New | [[Plus Inbox]] |
-| 📦 Extras | The Overflow | [[Extras]] |
 
 ---
 

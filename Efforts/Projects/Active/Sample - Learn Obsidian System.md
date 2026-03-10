@@ -1,5 +1,5 @@
 ---
-rank: 9.0
+rank: 1
 area: "[[Learning]]"
 status: active
 tags:

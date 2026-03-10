@@ -1,12 +1,12 @@
 ---
 tags:
   - area
-rank: 7
+rank: 8
 ---
 
-# 🎯 Career Development
+# 🎯 Data Management
 
-> An area of effort focused on professional growth and career advancement.
+> *Describe the purpose and scope of this area of effort.*
 
 ## Related Projects
 
@@ -19,9 +19,17 @@ WHERE area = this.file.link
 SORT rank DESC
 ```
 
+## Goals & Aspirations
+
+- 
+
+## Key Notes & Resources
+
+- 
+
 ## Notes
 
-*Add notes about your career goals, skills to develop, and milestones here.*
+*Ongoing thoughts and reflections about this area.*
 
 ---
 

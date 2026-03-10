@@ -58,3 +58,75 @@ div.markdown-preview-section > div > ul.has-list-bullet > li {
     row-gap: 0px !important;
     list-style-type: disc !important;
 }
+
+/* ===================================================
+   Nick Milo-style Navigation Board
+   Usage: > [!nav-plus], [!nav-atlas], [!nav-calendar], [!nav-efforts]
+   =================================================== */
+
+/* Shared base for all nav callout types */
+.callout[data-callout^="nav-"] {
+    margin: 3px 0 !important;
+    padding: 0 !important;
+    border-radius: 6px !important;
+    border-left-width: 4px !important;
+}
+
+.callout[data-callout^="nav-"] .callout-title {
+    padding: 7px 14px !important;
+    font-size: 0.82em !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.4px !important;
+    gap: 0 !important;
+    cursor: default;
+}
+
+/* Hide the callout icon and fold toggle */
+.callout[data-callout^="nav-"] .callout-icon {
+    display: none !important;
+}
+
+.callout[data-callout^="nav-"] .callout-fold {
+    display: none !important;
+}
+
+/* Hide any body content (title-only callouts) */
+.callout[data-callout^="nav-"] .callout-content {
+    display: none !important;
+}
+
+/* ➕ Plus row — warm yellow */
+.callout[data-callout="nav-plus"] {
+    background-color: rgba(255, 200, 40, 0.13) !important;
+    border-color: #d4a017 !important;
+}
+.callout[data-callout="nav-plus"] .callout-title {
+    color: var(--text-normal) !important;
+}
+
+/* 🗺️ Atlas rows — steel blue */
+.callout[data-callout="nav-atlas"] {
+    background-color: rgba(70, 130, 200, 0.13) !important;
+    border-color: #4a86c8 !important;
+}
+.callout[data-callout="nav-atlas"] .callout-title {
+    color: var(--text-normal) !important;
+}
+
+/* 📅 Calendar rows — soft purple */
+.callout[data-callout="nav-calendar"] {
+    background-color: rgba(148, 103, 189, 0.13) !important;
+    border-color: #9467bd !important;
+}
+.callout[data-callout="nav-calendar"] .callout-title {
+    color: var(--text-normal) !important;
+}
+
+/* ⚡ Efforts rows — coral/salmon */
+.callout[data-callout="nav-efforts"] {
+    background-color: rgba(214, 95, 95, 0.13) !important;
+    border-color: #d65f5f !important;
+}
+.callout[data-callout="nav-efforts"] .callout-title {
+    color: var(--text-normal) !important;
+}

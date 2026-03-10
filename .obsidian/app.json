@@ -1,7 +1,7 @@
 {
   "newFileLocation": "folder",
   "newFileFolderPath": "Plus",
-  "attachmentFolderPath": "Extras",
+  "attachmentFolderPath": "Plus/Extras",
   "alwaysUpdateLinks": true,
   "showLineNumber": true,
   "defaultViewMode": "preview"

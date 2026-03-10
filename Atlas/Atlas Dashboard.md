@@ -13,6 +13,27 @@ aliases:
 
 ---
 
+```button
+name 📝 New Atlas Note
+type command
+action QuickAdd: New Atlas Note
+color blue
+```
+```button
+name 📖 New Reading Note
+type command
+action QuickAdd: New Reading Note
+color blue
+```
+```button
+name 🎬 New Video Note
+type command
+action QuickAdd: New Video Note
+color blue
+```
+
+---
+
 ## 📚 All Atlas Notes
 
 ```dataview
@@ -20,6 +41,43 @@ TABLE WITHOUT ID dateformat(file.cday, "MM/dd/yyyy") AS "Created", dateformat(fi
 FROM "Atlas"
 WHERE file.name != "Atlas Dashboard"
 SORT file.mday DESC
+```
+
+---
+
+## 📖 Reading
+
+> Track books, articles, and papers you're reading or want to read.
+
+- [[Reading Dashboard]]
+
+```dataview
+TABLE WITHOUT ID
+  file.link AS "Title",
+  author AS "Author",
+  status AS "Status"
+FROM "Atlas/Reading"
+WHERE status = "reading" OR status = "to-read"
+SORT status ASC, file.cday DESC
+LIMIT 5
+```
+
+---
+
+## 🎬 Videos
+
+> YouTube videos tracked for knowledge, insights, and connections.
+
+- [[Video Dashboard]]
+
+```dataview
+TABLE WITHOUT ID
+  file.link AS "Title",
+  channel AS "Channel",
+  video_type AS "Type"
+FROM "Atlas/Videos"
+SORT file.cday DESC
+LIMIT 5
 ```
 
 ---

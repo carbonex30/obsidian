@@ -180,6 +180,66 @@
       },
       "fileExistsMode": "Increment the file name",
       "setFileExistsBehavior": false
+    },
+    {
+      "id": "daeb8ee4-893a-4969-9873-e7eb3a2e63f3",
+      "name": "New Reading Note",
+      "type": "Template",
+      "command": true,
+      "templatePath": "Templates/Reading Note Template.md",
+      "fileNameFormat": {
+        "enabled": true,
+        "format": "Reading Note ({{DATE:YYYY-MM-DD}})"
+      },
+      "folder": {
+        "enabled": true,
+        "folders": [
+          "Atlas/Reading"
+        ],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": false
+      },
+      "appendLink": false,
+      "openFile": true,
+      "fileOpening": {
+        "location": "tab",
+        "direction": "vertical",
+        "mode": "default",
+        "focus": true
+      },
+      "fileExistsMode": "Increment the file name",
+      "setFileExistsBehavior": false
+    },
+    {
+      "id": "6faa5e60-59d5-416e-8e1d-93e4865ff75e",
+      "name": "New Video Note",
+      "type": "Template",
+      "command": true,
+      "templatePath": "Templates/Video Note Template.md",
+      "fileNameFormat": {
+        "enabled": true,
+        "format": "Video Note ({{DATE:YYYY-MM-DD}})"
+      },
+      "folder": {
+        "enabled": true,
+        "folders": [
+          "Atlas/Videos"
+        ],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": false
+      },
+      "appendLink": false,
+      "openFile": true,
+      "fileOpening": {
+        "location": "tab",
+        "direction": "vertical",
+        "mode": "default",
+        "focus": true
+      },
+      "fileExistsMode": "Increment the file name",
+      "setFileExistsBehavior": false
     }
   ],
   "inputPrompt": "single-line",
