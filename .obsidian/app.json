@@ -3,6 +3,7 @@
   "newFileFolderPath": "Plus",
   "attachmentFolderPath": "Plus/Extras",
   "alwaysUpdateLinks": true,
-  "showLineNumber": true,
-  "defaultViewMode": "preview"
+  "showLineNumber": false,
+  "defaultViewMode": "preview",
+  "readableLineLength": false
 }

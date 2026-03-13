@@ -4,39 +4,152 @@
     "type": "split",
     "children": [
       {
-        "id": "a07f6200e24fc29b",
-        "type": "tabs",
+        "id": "87620247acdf3f54",
+        "type": "split",
         "children": [
           {
-            "id": "1678db34d137d276",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Home Base.md",
-                "mode": "preview",
-                "source": false
+            "id": "a07f6200e24fc29b",
+            "type": "tabs",
+            "dimension": 68.53448275862068,
+            "children": [
+              {
+                "id": "1678db34d137d276",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Home Base.md",
+                    "mode": "preview",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Home Base"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Home Base"
-            }
+              {
+                "id": "95ed7ec34193da22",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Efforts/Projects Dashboard.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Projects Dashboard"
+                }
+              },
+              {
+                "id": "a404da29cf41c205",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Home Base.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Home Base"
+                }
+              },
+              {
+                "id": "2c5cf5aaf49c3f7b",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Home Base.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Home Base"
+                }
+              },
+              {
+                "id": "ebb265de1c617b42",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Efforts/Projects Dashboard.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Projects Dashboard"
+                }
+              },
+              {
+                "id": "1e92dc721751d983",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Home Base.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Home Base"
+                }
+              }
+            ],
+            "currentTab": 5
           },
           {
-            "id": "a434b3f8ed262071",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Home Base.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Home Base"
-            }
+            "id": "3bed2eb0aac8c6c6",
+            "type": "tabs",
+            "dimension": 31.46551724137931,
+            "children": [
+              {
+                "id": "6afb7949a1098d7d",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "terminal:terminal",
+                  "state": {
+                    "terminal:terminal": {
+                      "cwd": "/home/carbonex30/Dropbox/obsidian/vault 3",
+                      "focus": false,
+                      "profile": {
+                        "args": [
+                          "--login"
+                        ],
+                        "executable": "/bin/bash",
+                        "followTheme": true,
+                        "name": "",
+                        "platforms": {
+                          "linux": true
+                        },
+                        "pythonExecutable": "python3",
+                        "restoreHistory": false,
+                        "rightClickAction": "copyPaste",
+                        "successExitCodes": [
+                          "0",
+                          "SIGINT",
+                          "SIGTERM"
+                        ],
+                        "terminalOptions": {
+                          "documentOverride": null
+                        },
+                        "type": "integrated",
+                        "useWin32Conhost": true
+                      },
+                      "serial": null
+                    }
+                  },
+                  "pinned": true,
+                  "icon": "terminal",
+                  "title": "Terminal: ✳ Claude Code"
+                }
+              }
+            ]
           }
         ],
-        "currentTab": 1
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -200,36 +313,36 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "fd5aaff8fee8709d",
+  "active": "1e92dc721751d983",
   "lastOpenFiles": [
-    "Atlas/Reading/Reading Note (2026-03-09).md",
-    "Home Base.md",
-    "Atlas/Atlas Note (2026-03-09).md",
+    "Efforts/Projects/Active/Voice to Text Note Taking.md",
+    "Efforts/Areas/Data Management.md",
     "Efforts/Projects Dashboard.md",
+    "Efforts/Areas/Note Taking.md",
+    "Calendar/Daily Notes/Daily Note (2026-03-12).md",
+    "Calendar/Calendar Dashboard.md",
+    "Efforts/Projects/Active/Obsidian + Claude Code.md",
+    "Home Base.md",
+    "Efforts/Projects/Active/NAS Drive.md",
     "Atlas/Atlas Dashboard.md",
+    "Atlas/ACE Framework.md",
+    "Plus/Extras/Extras.md",
+    "Efforts/Projects/Active/Sample - Build Personal Website.md",
+    "Plus/Obsidian + Claude Brainstorm.md",
+    "Atlas/Atlas Note (2026-03-11).md",
+    "Efforts/Areas/Obsidian Vault Improvement.md",
+    "Plus/Untitled.md",
+    "Atlas/Reading/Reading Note (2026-03-09).md",
+    "Atlas/Atlas Note (2026-03-09).md",
     "Atlas/Videos/The_Biggest_Obsidian_Upgrade_Ive_Made_in_Years_KekL4cLtpuc_20260228_001531_INSTRUCTIONAL_NEEDS_REVIEW.md",
     "Atlas/Videos/OpenAI_Strikes_Back__More_AI_News_You_Can_Use_9FruIqE0OEw_20260307_150654_INFORMATIONAL_VALIDATED.md",
     "Atlas/Video Dashboard.md",
-    "Efforts/Projects/Active/Sample - Build Personal Website.md",
     "Efforts/Projects/Active/Sample - Learn Obsidian System.md",
-    "Efforts/Projects/Active/Voice to Text Note Taking.md",
     "Efforts/Areas of Effort.md",
-    "Efforts/Areas/Data Management.md",
-    "Efforts/Areas/Obsidian Vault Improvement.md",
     "Efforts/Projects/Active/OS Backups.md",
     "Efforts/Areas/Career Development.md",
-    "Efforts/Areas/Creative Work.md",
-    "Efforts/Areas/Learning.md",
-    "Efforts/Projects/Active/NAS Drive.md",
-    "Plus/Plus Inbox.md",
-    "Plus/Extras/gemini-obs.md",
-    "Plus/Extras/Extras.md",
     "Plus/Extras",
-    "Atlas/Videos/YT Summaries/The_Biggest_Obsidian_Upgrade_Ive_Made_in_Years_KekL4cLtpuc_20260228_001531_INSTRUCTIONAL_NEEDS_REVIEW.md",
-    "Atlas/Videos/YT Summaries/OpenAI_Strikes_Back__More_AI_News_You_Can_Use_9FruIqE0OEw_20260307_150654_INFORMATIONAL_VALIDATED.md",
     "Atlas/Videos/YT Summaries",
-    "gemini-obs.md",
-    "Extras/gemini-obs.md",
     "Atlas/Untitled",
     "Atlas/Videos",
     "Atlas/Reading",

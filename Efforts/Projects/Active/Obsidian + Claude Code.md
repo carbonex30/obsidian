@@ -1,12 +1,15 @@
 ---
-rank: 9
-area: "[[Note Taking]]"
+rank: 10
+area: "[[Obsidian Vault Improvement]]"
 status: active
 tags:
   - project
+  - "#secondbrain"
+  - "#obsidian"
+  - "#claudecode"
 ---
 
-# Project (2026-03-08)
+# Project (2026-03-11)
 
 > **Area:** 
 > **Rank:** 5.0
@@ -14,9 +17,8 @@ tags:
 
 ## Description
 
-* Simplify note taking by speaking
-* 
-
+* integrate claude code into obsidian
+* claude code to handle file management and complex dataview and stuff*
 
 
 
@@ -25,12 +27,12 @@ tags:
 - [ ] 
 
 ## Key Resources & Links
-
+* [[Obsidian + Claude Brainstorm]]
 
 
 ## Progress Log
 
-- **2026-03-08** — Project created
+- **2026-03-11** — Project created
 
 ## Notes
 
